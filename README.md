@@ -8,6 +8,28 @@ UX-Driven Animated Component Library
 - [ ] - Animated - (Framer Motion)
 - [ ] - Great User Experience - (Performance, Accessbility)
 
+## Project Architecture
+
+- [ ] - Themeable
+  - [ ] Shape - Border Radius
+  - [ ] Colors - Tints & Shades
+  - [ ] Spacing - Padding & Margins
+- [ ] - Animated - (Framer Motion)
+  - [ ] Easing Animations
+  - [ ] Bouncing Animations
+  - [ ] Fading Animations
+
+## Project Setup
+
+- [ ] - Configurable - (Using Context ??) | Theme, Animations, Feel
+- [ ] - Animated - (Framer Motion)
+
+## Project Dependencies
+
+- [ ] - StoryBook - Isolated Component Documentation
+- [ ] - Framer Motion - Component Animation
+- [ ] - Styled Components - CSS-in-JS Style Library
+
 ## - Components
 
 ### Form
