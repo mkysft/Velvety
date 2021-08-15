@@ -40,7 +40,7 @@ To start using the components, please follow these steps:
 ```jsx
 import { VelvetProvider } from "@chakra-ui/react";
 
-// Do this at the root of your application
+// @ Root of your Application
 function App({ children }) {
   return <VelvetProvider>{children}</VelvetProvider>;
 }
