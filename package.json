@@ -1,6 +1,6 @@
 {
   "name": "velvety",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Velvet-Smooth React Components",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
