@@ -21,10 +21,12 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prettier": "prettier --write src/**/*.{tsx,scss}",
+    "prettier-tooling": "prettier --write tooling/**/*.{js,tsx,scss}",
     "check-prettier": "prettier --list-different src/**/*.{tsx,scss}",
     "test": "jest",
     "watch-test": "jest --watch",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "tooling-compose": "node ./tooling/compose"
   },
   "repository": {
     "type": "git",
@@ -49,6 +51,7 @@
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.18",
+    "@types/styled-components": "^5.1.12",
     "babel-loader": "^8.2.2",
     "framer-motion": "^4.1.17",
     "identity-obj-proxy": "^3.0.0",

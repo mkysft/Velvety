@@ -9,7 +9,7 @@ describe("Button Component", () => {
 
   beforeEach(() => {
     props = {
-      theme: "primary",
+      theme: "velvet",
       label: "Test Button",
       loading: false,
     };
@@ -17,9 +17,9 @@ describe("Button Component", () => {
 
   const renderComponent = () => render(<Button {...props} />);
 
-  it("should have primary className with default props", () => {
-    // const { getByTestId } = renderComponent();
-    // const Button = getByTestId("test-component");
+  it("should have test text", () => {
+    const { getByTestId } = renderComponent();
+    const Button = getByTestId("Button");
     // expect(Button).toBe("Test Button");
 
     renderComponent();

@@ -1,5 +1,8 @@
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  theme: string | "brand";
+import { HTMLMotionProps } from "framer-motion";
+import { ThemeTypes } from "../../core/types";
+
+interface ButtonProps extends HTMLMotionProps<"button"> {
+  theme: ThemeTypes;
   variant?: "solid";
   size?: "sm" | "md" | "lg";
   label: string;
