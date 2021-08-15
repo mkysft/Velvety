@@ -26,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mikey-Software/Velvety.git"
+    "url": "git+https://github.com/mikeysoftware/Velvety.git"
   },
   "author": "Michael Cowan - @mikeysoftware",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mikey-Software/Velvety/issues"
+    "url": "https://github.com/mikeysoftware/Velvety/issues"
   },
-  "homepage": "https://github.com/Mikey-Software/Velvety#readme",
+  "homepage": "https://github.com/mikeysoftware/Velvety#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.15.0",
