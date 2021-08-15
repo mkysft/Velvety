@@ -1,6 +1,6 @@
 {
   "name": "velvety",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "description": "Velvet-Smooth React Components",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -9,15 +9,19 @@
     "/lib"
   ],
   "keywords": [
+    "animated",
     "storybook",
     "react",
+    "styled-components",
     "components",
     "typescript"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "prettier": "prettier --write src/**/*.{tsx,scss}",
+    "check-prettier": "prettier --list-different src/**/*.{tsx,scss}",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
   },
   "repository": {

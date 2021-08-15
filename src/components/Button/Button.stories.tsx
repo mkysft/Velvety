@@ -1,11 +1,12 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
-import Button, { ButtonProps } from "./Button";
+import Button from "./Button";
+import ButtonProps from "./Button.types";
 
 export default {
-    title: "Components/Button",
-    component: Button,
+  title: "Components/Button",
+  component: Button,
 } as Meta;
 
 // Master Template
