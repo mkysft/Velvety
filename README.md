@@ -1,101 +1,66 @@
-# Velvety
+# Velvety - Beta
 
-UX-Driven Animated Component Library
+---
 
-## - Goals
+Velvety makes fronted development effortless by providing simple, yet powerful components that are tested, accessible and oh-so sikly-smooth.
 
-- [ ] - Configurable - (Using Context ??) | Theme, Animations, Feel
-- [ ] - Animated - (Framer Motion)
-- [ ] - Great User Experience - (Performance, Accessbility)
+### Features
 
-## Project Architecture
+- Developer Focused
+- Configurable
+- Accessible
+- Intuitive
 
-- [ ] - Themeable
-  - [ ] Shape - Border Radius
-  - [ ] Colors - Tints & Shades
-  - [ ] Spacing - Padding & Margins
-- [ ] - Animated - (Framer Motion)
-  - [ ] Easing Animations
-  - [ ] Bouncing Animations
-  - [ ] Fading Animations
+## Coming Soon
 
-## Project Setup
+- Animations
+- Light/Dark Mode
+- Official Website/Documentation
 
-- [ ] - Configurable - (Using Context ??) | Theme, Animations, Feel
-- [ ] - Animated - (Framer Motion)
+## Installing Velvety
 
-## Project Dependencies
+To use Velvety UI components, all you need to do is install the
+`velvety` package and its peer dependencies:
 
-- [ ] - StoryBook - Isolated Component Documentation
-- [ ] - Framer Motion - Component Animation
-- [ ] - Styled Components - CSS-in-JS Style Library
+```sh
+$ npm install velvety
 
-## - Components
+# or
 
-### Form
+$ yarn add velvety
+```
 
-- [ ] Button
-- [ ] Input - Text|Numeric|Pin
-- [ ] CheckBox
-- [ ] Radio
-- [ ] Switch
-- [ ] Select
-- [ ] Slider
-- [ ] TextArea
-- [ ] RichTextArea
-- [ ] Form Controller
-- [ ] Dropdown
-- [ ] DatePicker
-- [ ] TimePicker
-- [ ] File Upload
-- [ ] AutoComplete
-- [ ] RichRadio
+## Usage
 
-### Interaction
+To start using the components, please follow these steps:
 
-- [ ] Modal
-- [ ] Drawer
-- [ ] Context Menu
-- [ ] ToolBar
-- [ ] Schedule
-- [ ] Calendar
-- [ ] Menu
+1. Wrap your application with the `VelvetProvider` provided by
+   **velvety**.
 
-### Information
+```jsx
+import { VelvetProvider } from "@chakra-ui/react";
 
-- [ ] Badge
-- [ ] Command/ShortCut
-- [ ] SparkLines
-- [ ] Stats/Metrics
-- [ ] Tag/Chip
-- [ ] TimeLine
-- [ ] Accordion
-- [ ] DataTable
+// Do this at the root of your application
+function App({ children }) {
+  return <VelvetProvider>{children}</VelvetProvider>;
+}
+```
 
-### Layout
+2. Now you can start using components like below:
 
-- [ ] Container
-- [ ] Grid
-- [ ] Grid
-- [ ] FlexBox
-- [ ] Stack
-- [ ] List (Draggable)
-- [ ] Aspect Ratio
+```jsx
+import { Button } from "@velvety";
 
-### Navigation
+function Application() {
+  return <Button>Feeling Velvety!</Button>;
+}
+```
 
-- [ ] BreadCrumb
-- [ ] Stepper
-- [ ] Tabs
-- [ ] Pagiantion
+## Support Velvety
 
-### Feedback
+- The best way to currently support Velvety is to share your feedback and input with the owner.
+- Velvety is originally intended to be a learning experience and introduction to open-source for [@mikeysoftware](https://github.com/mikeysoftware). Thanks again for trying velvety!
 
-- [ ] Alert
-- [ ] Skeleton
-- [ ] Toast
-- [ ] Spinner
-- [ ] Progress
-- [ ] Popover
-- [ ] Dialog
-- [ ] Ratings
+## License
+
+MIT © [Michael cowan](https://github.com/mikeysoftware)
