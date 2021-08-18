@@ -23,16 +23,16 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 // Solid
 export const Solid = Template.bind({});
-Solid.args = { label: "Solid", variant: "solid", size: "md", loading: false };
+Solid.args = { label: "Solid", variant: "solid", size: "md", loading: false, fullwidth: false };
 
 // Outline
 export const Outline = Template.bind({});
-Outline.args = { label: "Outline", variant: "outline", size: "md", loading: false };
+Outline.args = { label: "Outline", variant: "outline", size: "md", loading: false, fullwidth: false };
 
 // Icon
 export const Icon = Template.bind({});
-Icon.args = { label: "☀", variant: "icon", size: "md", loading: false };
+Icon.args = { label: "☀", variant: "icon", size: "md", loading: false, fullwidth: false };
 
 // Text
 export const Text = Template.bind({});
-Text.args = { label: "Text", variant: "text", size: "md", loading: false };
+Text.args = { label: "Text", variant: "text", size: "md", loading: false, fullwidth: false };

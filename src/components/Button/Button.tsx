@@ -3,27 +3,25 @@ import ButtonProps from "./Button.types";
 import StyledButton from "./Button.styled";
 import ButtonAnimation from "./Button.anim";
 
-import { generatePalette } from "../../core/colors";
-
 const Button = React.forwardRef(
   (
     {
+      scheme = "primary",
       variant = "solid",
       size = "md",
       fullwidth = false,
-      label,
+      label = "Button",
       loading = false,
+      loadingText = "Loading",
       leftIcon,
       rightIcon,
       onClick,
       children,
+      disabled,
       ...props
     }: ButtonProps,
     ref: React.Ref<HTMLButtonElement>,
   ) => {
-    const palette = generatePalette("rgb(171,20,56)");
-    // console.log(palette);
-
     return (
       <StyledButton
         ref={ref}
@@ -41,12 +39,14 @@ const Button = React.forwardRef(
         // Props
         type="button"
         onClick={onClick}
+        disabled={disabled || loading}
         {...props}>
         {/* Left Icon */}
         {leftIcon !== null && leftIcon}
 
         {/* Content || Loader */}
-        {loading !== true ? children || label : "Loading"}
+        {loading !== true ? children || label : <span>LOADER Placeholder</span>}
+        {loading === true && loadingText !== null && loadingText}
 
         {/* Right Icon */}
         {rightIcon !== null && rightIcon}

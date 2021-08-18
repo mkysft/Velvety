@@ -16,6 +16,20 @@ const StyledButton = styled(motion.button)<ButtonProps>`
   border: 0.125rem solid ${(props) => props.theme.colors.primary[500]};
   border-radius: 0.25rem;
   cursor: pointer;
+  /* States */
+  &:hover {
+    background-color: ${(props) => props.theme.colors.primary[600]};
+    border-color: ${(props) => props.theme.colors.primary[600]};
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1875rem ${(props) => props.theme.colors.primary[100]};
+  }
+
+  /* CSS Animations */
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 
   /* Size - Medium :: 4 x 16 */
   ${(props) =>
@@ -48,13 +62,7 @@ const StyledButton = styled(motion.button)<ButtonProps>`
     `};
 
   /* Variant - Solid */
-  ${(props) =>
-    props.variant === "solid" &&
-    css`
-      &:hover {
-        background-color: ${(props) => props.theme.colors.primary[600]};
-      }
-    `};
+  ${(props) => props.variant === "solid" && css``};
 
   /* Variant - Outline */
   ${(props) =>
@@ -101,10 +109,19 @@ const StyledButton = styled(motion.button)<ButtonProps>`
       }
     `};
 
-  /* States */
-  &:disabled {
-    cursor: default;
-  }
+  /* Props - Fullwidth */
+  ${(props) =>
+    props.fullwidth === true &&
+    css`
+      width: 100%;
+    `};
+
+  /* Props - Disabled */
+  ${(props) =>
+    props.disabled === true &&
+    css`
+      background-color: ${(props) => props.theme.colors.primary[50]};
+    `};
 `;
 
 export default StyledButton;

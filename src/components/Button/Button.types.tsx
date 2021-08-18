@@ -8,6 +8,7 @@ interface ButtonProps extends HTMLMotionProps<"button"> {
   size?: "sm" | "md" | "lg";
   label?: string;
   loading?: boolean;
+  loadingText?: string;
   fullwidth?: boolean;
   leftIcon?: React.ReactElement;
   rightIcon?: React.ReactElement;

@@ -15,7 +15,8 @@
     "styled-components",
     "framer-motion",
     "components",
-    "typescript"
+    "typescript",
+    "component library"
   ],
   "scripts": {
     "storybook": "start-storybook -p 6006",
