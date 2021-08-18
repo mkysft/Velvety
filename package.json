@@ -26,7 +26,7 @@
     "test": "jest",
     "watch-test": "jest --watch",
     "build": "rollup -c",
-    "tooling-compose": "node ./tooling/compose"
+    "compose": "node ./tooling/compose"
   },
   "repository": {
     "type": "git",

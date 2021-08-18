@@ -2,6 +2,8 @@ module.exports = (componentName) => ({
   content: `import React from "react";
     
 import { render, screen } from "@testing-library/react";
+
+// Velvety
 import ${componentName} from "./${componentName}";
 import ${componentName}Props from "./${componentName}.types";
 

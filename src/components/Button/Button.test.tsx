@@ -9,7 +9,7 @@ describe("Button Component", () => {
 
   beforeEach(() => {
     props = {
-      theme: "velvet",
+      scheme: "velvet",
       label: "Test Button",
       loading: false,
     };

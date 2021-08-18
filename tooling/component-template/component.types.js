@@ -1,5 +1,8 @@
 module.exports = (componentName) => ({
-  content: `import { HTMLMotionProps } from "framer-motion";
+  content: `import React from "react";
+import { HTMLMotionProps } from "framer-motion";
+
+// Velvety
 import { ThemeTypes } from "../../core/types";
 
 interface ${componentName}Props extends HTMLMotionProps<"div"> {

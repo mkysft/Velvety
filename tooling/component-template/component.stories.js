@@ -3,6 +3,8 @@ module.exports = (componentName) => ({
 
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
+
+// Velvety
 import ${componentName} from "./${componentName}";
 import ${componentName}Props from "./${componentName}.types";
 

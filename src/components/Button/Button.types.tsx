@@ -1,12 +1,16 @@
+import React from "react";
 import { HTMLMotionProps } from "framer-motion";
 import { ThemeTypes } from "../../core/types";
 
 interface ButtonProps extends HTMLMotionProps<"button"> {
-  theme: ThemeTypes;
-  variant?: "solid";
+  scheme?: ThemeTypes;
+  variant?: "solid" | "outline" | "icon" | "text";
   size?: "sm" | "md" | "lg";
-  label: string;
-  loading: boolean;
+  label?: string;
+  loading?: boolean;
+  fullwidth?: boolean;
+  leftIcon?: React.ReactElement;
+  rightIcon?: React.ReactElement;
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
